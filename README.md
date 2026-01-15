@@ -1,4 +1,4 @@
-# Open Agri - Plant Disease Detection AI
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    # Open Agri - Plant Disease Detection AI
 
 This project focuses on identifying plant diseases using advanced Deep Learning models. It includes a user-friendly web interface powered by a multimodal Large Language Model (LLM) and specialized pipelines for Tomato Disease detection.
 
@@ -40,9 +40,16 @@ Ensure you have Python installed. It is recommended to use a virtual environment
 
 ## 🎮 Usage
 
-### 1. Run the Web Application (LLaVA Model)
-Start the AI assistant to analyze any plant leaf image.
+### 1. Run the Web Application
 
+#### Option A: Streamlit (Recommended)
+This provides a polished, interactive web UI.
+```bash
+cd new
+streamlit run streamlit_app.py
+```
+
+#### Option B: Gradio (Legacy)
 ```bash
 cd new
 python main.py
