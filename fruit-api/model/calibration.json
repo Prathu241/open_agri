@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "model_version": "public-fruit-v1",
+  "research_only": true,
+  "temperature": 0.8492680788040161,
+  "uncertainty": {
+    "threshold": 0.5049999999999999,
+    "coverage": 0.9531821506949525,
+    "accepted_accuracy": 0.9501151189562548,
+    "target_validation_accepted_accuracy": 0.95,
+    "test_coverage": 0.9370851370851371,
+    "test_accepted_accuracy": 0.9254696643055128,
+    "test_rejected_count": 218
+  },
+  "validation_uncalibrated": {
+    "accuracy": 0.9217264081931237,
+    "macro_f1": 0.8357111205411959,
+    "top3_accuracy": 0.9729334308705194,
+    "crop_accuracy": 0.950256035113387,
+    "negative_log_likelihood": 0.279439061346057,
+    "brier_score": 0.11265580356121063,
+    "expected_calibration_error": 0.030020189071625993
+  },
+  "validation_calibrated": {
+    "accuracy": 0.9217264081931237,
+    "macro_f1": 0.8357111205411959,
+    "top3_accuracy": 0.9729334308705194,
+    "crop_accuracy": 0.950256035113387,
+    "negative_log_likelihood": 0.27142314593653516,
+    "brier_score": 0.11178053915500641,
+    "expected_calibration_error": 0.019833111891627876
+  },
+  "test_uncalibrated": {
+    "accuracy": 0.8874458874458875,
+    "macro_f1": 0.8089267704016092,
+    "top3_accuracy": 0.9604617604617605,
+    "crop_accuracy": 0.9261183261183261,
+    "negative_log_likelihood": 0.38907020877210774,
+    "brier_score": 0.1560017317533493,
+    "expected_calibration_error": 0.023438631877582695
+  },
+  "test_calibrated": {
+    "accuracy": 0.8874458874458875,
+    "macro_f1": 0.8089267704016092,
+    "top3_accuracy": 0.9604617604617605,
+    "crop_accuracy": 0.9261183261183261,
+    "negative_log_likelihood": 0.39178822056929824,
+    "brier_score": 0.15660741925239563,
+    "expected_calibration_error": 0.02067238362492595
+  },
+  "labels": [
+    "apple__black_rot",
+    "apple__healthy",
+    "apple__mosaic_virus",
+    "apple__rust",
+    "apple__scab",
+    "banana__healthy",
+    "banana__panama_disease",
+    "blueberry__healthy",
+    "blueberry__rust",
+    "cherry__healthy",
+    "cherry__leaf_spot",
+    "cherry__powdery_mildew",
+    "grape__black_rot",
+    "grape__downy_mildew",
+    "grape__esca_black_measles",
+    "grape__healthy",
+    "grape__leaf_spot",
+    "grape__leafroll_disease",
+    "peach__bacterial_spot",
+    "peach__healthy",
+    "peach__leaf_curl",
+    "strawberry__anthracnose",
+    "strawberry__healthy",
+    "strawberry__leaf_scorch"
+  ],
+  "limitations": [
+    "Public web and controlled-background data only; not validated on Jeevandhara farm captures.",
+    "PlantWild licensing restricts this model to research/non-commercial use.",
+    "Mango and pomegranate are unsupported.",
+    "Low-support classes must be treated as experimental even above the global confidence threshold."
+  ]
+}

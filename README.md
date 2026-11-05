@@ -2,6 +2,8 @@
 
 This project focuses on identifying plant diseases using advanced Deep Learning models. It includes a user-friendly web interface powered by a multimodal Large Language Model (LLM) and specialized pipelines for Tomato Disease detection.
 
+The repository also includes a deployable, calibrated fruit-disease research API used by the Jeevandhara frontend.
+
 ## 📂 Project Structure
 
 - **`new/`**: Contains the interactive web application.
@@ -11,6 +13,10 @@ This project focuses on identifying plant diseases using advanced Deep Learning 
   - `models/`: Storage for trained Keras/H5 models.
   - `src/`: Training scripts (`train.py`), utilities (`utils.py`), and evaluation scripts.
   - `segmentation/` & `patch_classifier/`: Specialized scripts for image segmentation and patch-based classification.
+- **`fruit-api/`**: Docker-ready FastAPI service for the calibrated `public-fruit-v1` model.
+  - Supports 24 conditions across apple, banana, blueberry, cherry, grape, peach, and strawberry.
+  - Includes photo-quality rejection, calibrated uncertainty, and selected-crop mismatch rejection.
+  - Is research-only and does not return treatment or pesticide instructions.
 
 ## 🚀 Getting Started
 
@@ -64,6 +70,15 @@ cd tomato-disease-ai/src
 python train.py
 ```
 *(Refer to individual scripts in `tomato-disease-ai` for specific segmentation or patch-based training tasks.)*
+
+### 3. Run the Fruit Disease API
+
+```bash
+docker build -t jeevandhara-fruit-api fruit-api
+docker run --rm -p 8002:8000 jeevandhara-fruit-api
+```
+
+Open `http://127.0.0.1:8002/docs` for the API interface. See [`fruit-api/README.md`](fruit-api/README.md) for deployment and licensing limitations.
 
 ## 🧠 Models Used
 

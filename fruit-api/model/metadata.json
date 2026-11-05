@@ -1,0 +1,52 @@
+{
+  "model_version": "public-fruit-v1",
+  "architecture": "efficientnet_b0",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "labels": [
+    "apple__black_rot",
+    "apple__healthy",
+    "apple__mosaic_virus",
+    "apple__rust",
+    "apple__scab",
+    "banana__healthy",
+    "banana__panama_disease",
+    "blueberry__healthy",
+    "blueberry__rust",
+    "cherry__healthy",
+    "cherry__leaf_spot",
+    "cherry__powdery_mildew",
+    "grape__black_rot",
+    "grape__downy_mildew",
+    "grape__esca_black_measles",
+    "grape__healthy",
+    "grape__leaf_spot",
+    "grape__leafroll_disease",
+    "peach__bacterial_spot",
+    "peach__healthy",
+    "peach__leaf_curl",
+    "strawberry__anthracnose",
+    "strawberry__healthy",
+    "strawberry__leaf_scorch"
+  ],
+  "temperature": 0.8492680788040161,
+  "confidence_threshold": 0.5049999999999999,
+  "research_only": true,
+  "torchscript_verification_max_difference": 0.0
+}
